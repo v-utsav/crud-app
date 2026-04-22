@@ -1,10 +1,10 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import { FormControl, FormGroup, InputLabel, Input, Typography, Button, styled } from "@mui/material";
 
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
-import { addUser } from '../service/api';
+import { getUser, editUser } from '../service/api';
 
 const Container = styled(FormGroup)`
     width: 50%;
@@ -23,44 +23,54 @@ const initialValues = {
 
 
 
-const AddUser = () => {
+const EditUser = () => {
 
     const [user, setUser] = useState(initialValues);
     const navigate = useNavigate();
+    const { id } = useParams();
+
+    useEffect (() => {
+        getUserData();
+    }, []);
+
+    const getUserData = async () => {
+        let response = await getUser(id); 
+        setUser(response.data);
+    };
 
     const onValueChange = (e) => {
         setUser({ ...user , [e.target.name]: e.target.value});
         console.log(user);
     };
 
-    const addUserDetails = async () => {
-        await addUser(user);
+    const editUserDetails = async () => {
+        await editUser(user, id);
         navigate('/all');
     };
 
     return(
         <Container>
-            <Typography variant="h4">Add User</Typography>
+            <Typography variant="h4">Edit User</Typography>
             <FormControl>
                 <InputLabel>Name</InputLabel>
-                <Input onChange={(e) => onValueChange(e)} name='name'/>
+                <Input onChange={(e) => onValueChange(e)} name='name' value={user.name} />
             </FormControl>
             <FormControl>
                 <InputLabel>Username</InputLabel>
-                <Input onChange={(e) => onValueChange(e)} name='username'/>
+                <Input onChange={(e) => onValueChange(e)} name='username' value={user.username} />
             </FormControl>
             <FormControl>
                 <InputLabel>Email</InputLabel>
-                <Input onChange={(e) => onValueChange(e)} name='email'/>
+                <Input onChange={(e) => onValueChange(e)} name='email' value={user.email} />
             </FormControl>
             <FormControl>
                 <InputLabel>Phone</InputLabel>
-                <Input onChange={(e) => onValueChange(e)} name='phone'/>
+                <Input onChange={(e) => onValueChange(e)} name='phone' value={user.phone} />
             </FormControl>
             <FormControl>
-                <Button onClick={() => addUserDetails()} variant="contained">Add User</Button>
+                <Button onClick={() => editUserDetails()} variant="contained">Edit User</Button>
             </FormControl>
         </Container>
     );
 }
-export default AddUser;
+export default EditUser;
