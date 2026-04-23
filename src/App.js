@@ -3,7 +3,7 @@ import './App.css';
 
 //componenets
 import NavBar from './components/NavBar';
-import CrudApp from './components/CrudApp';
+import Home from './components/Home';
 import AllUsers from './components/AllUsers';
 import AddUser from './components/AddUser';
 import EditUser from './components/EditUser';
@@ -16,7 +16,7 @@ function App() {
     <BrowserRouter>
       <NavBar />
       <Routes>
-        <Route path='/' element={<CrudApp />} />
+        <Route path='/' element={<Home />} />
         <Route path='/all' element={<AllUsers />} />
         <Route path='/add' element={<AddUser />} />
         <Route path='/edit/:id' element={<EditUser />} />

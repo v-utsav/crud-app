@@ -20,6 +20,20 @@
       "email": "pankajt@gmail.com",
       "phone": "4637583726",
       "id": "jcWnCrFqLYU"
+    },
+    {
+      "name": "Ranbir Kapoor",
+      "username": "ranbk",
+      "email": "ranbir@gmail.com",
+      "phone": "5748392874",
+      "id": "CSMlVsy90YQ"
+    },
+    {
+      "name": "Amitabh Bachchan",
+      "username": "amitabh",
+      "email": "amitabh@gmail.com",
+      "phone": "4738574637",
+      "id": "EX5cEFWkPUo"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
