@@ -8,12 +8,12 @@ import AllUsers from './components/AllUsers';
 import AddUser from './components/AddUser';
 import EditUser from './components/EditUser';
 
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <NavBar />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -21,7 +21,7 @@ function App() {
         <Route path='/add' element={<AddUser />} />
         <Route path='/edit/:id' element={<EditUser />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
