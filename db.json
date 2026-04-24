@@ -34,13 +34,6 @@
       "email": "amitabh@gmail.com",
       "phone": "4738574637",
       "id": "EX5cEFWkPUo"
-    },
-    {
-      "name": "Abhishek Bachchan",
-      "username": "AB",
-      "email": "ab@gmail.com",
-      "phone": "0956432786",
-      "id": "vnEu7gDAaL8"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
