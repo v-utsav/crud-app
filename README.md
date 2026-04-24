@@ -1,3 +1,35 @@
+# CRUD App developed in React JS utilizing Material UI and Tailwind CSS
+- The homepage is developed using purely Tailwind CSS whereas other pages such as All Users and Add User form are developed with Material UI.
+- As can be seen that Tailwind CSS provides a lot of freedom to the developer and is helpful in designing highly creative web pages, on the other hand Material UI provides ready made component to develop professional web sites quickly.
+- Moreover, I have used JSON server in this project to validate the CRUD operations.
+- The website has been published at [https://v-utsav.github.io/crud-app/](https://v-utsav.github.io/crud-app/) via github pages.
+- As gh pages only allows static websites to be published, the actual outcome of CRUD operations won't be reflected in the published app. However, the changed can definitely be seen in the local environment.
+
+
+# Steps to set up this project locally
+- clone this repo in your local environment using
+### `git clone https://github.com/v-utsav/crud-app.git`
+- then go to the crud-app folder using
+### `cd crud-app`
+- Installing all dependencies
+-- Material UI
+### `npm install @mui/material @emotion/react @emotion/styled`
+-- react-router-dom
+### `npm i react-rounter-dom`
+-- axios
+### `npm i axios`
+-- json-server
+### `npm i json-server`
+-- framer-motion
+### `npm i framer-motion`
+-- tailwind css
+### `npm install -D tailwindcss@3`
+### `npx tailwindcss init`
+-- run json-server
+### `npm run json-server`
+- then run
+### `npm start`
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
