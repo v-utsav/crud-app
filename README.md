@@ -7,11 +7,11 @@
 
 
 # Steps to set up this project locally
-1. clone this repo in your local environment using
+## 1. clone this repo in your local environment using
 ### `git clone https://github.com/v-utsav/crud-app.git`
-2. then go to the crud-app folder using
+## 2. then go to the crud-app folder using
 ### `cd crud-app`
-3. Installing all dependencies
+## 3. Installing all dependencies
   - Material UI
 ### `npm install @mui/material @emotion/react @emotion/styled`
   - react-router-dom
@@ -25,9 +25,9 @@
   - tailwind css
 ### `npm install -D tailwindcss@3`
 ### `npx tailwindcss init`
-4. run json-server
+## 4. run json-server
 ### `npm run json-server`
-5. then run
+## 5. then run
 ### `npm start`
 
 # Getting Started with Create React App
