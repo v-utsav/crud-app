@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://my-json-server.typicode.com/v-utsav/crud-app';
+const API_URL = process.env.REACT_APP_API_URL;
 
 export const addUser = async (data) => {
     try{
