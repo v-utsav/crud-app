@@ -14,14 +14,19 @@
 - Installing all dependencies
   - Material UI
 ### `npm install @mui/material @emotion/react @emotion/styled`
+- 
   - react-router-dom
 ### `npm i react-rounter-dom`
+- 
   - axios
 ### `npm i axios`
+- 
   - json-server
 ### `npm i json-server`
+- 
   - framer-motion
 ### `npm i framer-motion`
+- 
   - tailwind css
 ### `npm install -D tailwindcss@3`
 ### `npx tailwindcss init`
