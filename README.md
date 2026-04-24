@@ -3,7 +3,7 @@
 - As can be seen that Tailwind CSS provides a lot of freedom to the developer and is helpful in designing highly creative web pages, on the other hand Material UI provides ready made component to develop professional web sites quickly.
 - Moreover, I have used JSON server in this project to validate the CRUD operations.
 - The website has been published at [https://v-utsav.github.io/crud-app/](https://v-utsav.github.io/crud-app/) via github pages.
-- As gh pages only allows static websites to be published, the actual outcome of CRUD operations won't be reflected in the published app. However, the changed can definitely be seen in the local environment.
+- As gh pages only allows static websites to be published, the actual outcome of CRUD operations won't be reflected in the published app. However, the changes can definitely be seen in the local environment.
 
 
 # Steps to set up this project locally
