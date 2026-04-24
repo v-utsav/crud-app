@@ -45,7 +45,7 @@ const Home = () => {
           <p className="mb-6">Manage users with a modern React + Tailwind UI</p>
           <div className="flex justify-center gap-4">
             <button
-              onClick={() => navigate("/all ")}
+              onClick={() => navigate("/all")}
               className="bg-white text-indigo-600 px-6 py-2 rounded-lg font-semibold hover:scale-105 transition"
             >
               View Users
